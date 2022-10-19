@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+.cards {
+  margin: 60px 10px;
+}
+
+.card {
+  height: 33%;
+}
+
+.sedans {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  background: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card__content {
+  padding: 30px;
+  height: 100%;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+.description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learn-more {
+  border: 0;
+  border-radius: 50px;
+  background: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  mix-blend-mode: screen;
+  height: 40px;
+  width: 130px;
+}
+
+@media (min-width: 40rem) {
+  body {
+    display: flex;
+    height: 100vh;
+  }
+
+  .cards {
+    display: flex;
+    margin: 150px 200px 150px 200px;
+  }
+
+  .card {
+    width: 33.3%;
+    height: 90%;
+  }
+
+  .sedans {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .luxury {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .card__content {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 170px; /* this one here should be a different one because the button is moving weird with the text*/
+  }
+}
