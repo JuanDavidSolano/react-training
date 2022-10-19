@@ -1,0 +1,18 @@
+elements -> html tags
+classes -> .classname y se usa <h1> class="classname here"</h1>
+id -> #id set style to one element 
+attributes -> [attribute] 
+Prioridad de css
+in style -> ID -> class, pseudoclass, attribute -> <Tag>
+COMBINATORS
+Adjacent Sibling -> div + p {  } -> adds style to the adjacent element (in this case the p adjacent to a div is going to have the style)
+General Sibling -> div ~ p {  } -> adds style to any sibling element (in this case the p element is going to have the style if is a sibling of div
+Descendant -> div p {  } -> adds style to any child of the element (in this case any p element inside the div is going to get the style)
+Child -> div > p {  } -> adds style to direct child (in this case the p element that is inside the div is going to get the style)
+
+1rem = 16px
+
+
+
+
+

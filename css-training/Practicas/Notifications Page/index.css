@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7fafd;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.notifications__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 100%;
+  background: #ffffff;
+}
+
+.notifications__header-container {
+  display: flex;
+  flex-direction: row;
+  width: 21.438rem;
+  height: 1.563rem;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.notifications-header__title-container {
+  display: flex;
+}
+
+.notifications-header__title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.563rem;
+  color: #1c202b;
+  height: fit-content;
+  padding-right: 0.563rem;
+  margin: 0;
+}
+
+.notifications-header__number-container {
+  height: 1.563rem;
+  width: 2rem;
+  background: #0a327b;
+  border-radius: 6px;
+}
+
+.notifications-header__number {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  font-style: normal;
+  margin: 0;
+  height: fit-content;
+}
+
+.notifications__readed-button {
+  height: fit-content;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #5e6778;
+  padding-left: 4.625rem;
+}
+
+.notification {
+  display: flex;
+  background: #f7fafd;
+  height: 5.563rem;
+  width: 21.438rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.625rem;
+  border-radius: 8px;
+}
+
+.notification__profile-img {
+  height: 2.438rem;
+  width: 2.438rem;
+  margin-top: 1rem;
+  margin-bottom: 2.125rem;
+  margin-left: 1rem;
+  margin-right: 0.813rem;
+}
+
+.notification__msg {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #5e6778;
+  padding-bottom: 0.188rem;
+  margin: 0;
+  padding-top: 1rem;
+  height: fit-content;
+}
+
+bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #1c202b;
+}
+
+.notification-msg__post {
+  color: #5e6778;
+}
+
+.notification-msg__group {
+  color: #0a327b;
+}
+
+.notification-msg__dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #f65552;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.375rem;
+}
+
+.notification__time {
+  color: #939cad;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 18px;
+  height: fit-content;
+}
+
+.notification__direct-message {
+  display: flex;
+  background: #ffffff;
+  height: 13.938rem;
+  width: 21.438rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.625rem;
+  border-radius: 8px;
+}
+
+.direct-message__container {
+  border: solid 1px #dde7ee;
+  height: 7.625rem;
+  width: 16.438rem;
+}
+
+.direct-message__container:hover {
+  background: #e5effa;
+}
+
+.direct-message__content {
+  color: #5e6778;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.notification__direct-message > .notification__profile-img {
+  height: 2.438rem;
+  width: 2.438rem;
+  margin-right: 0.813rem;
+  align-self: flex-start;
+}
+
+.notification__comment {
+  display: flex;
+  background: #ffffff;
+  height: 5.563rem;
+  width: 21.438rem;
+  margin-bottom: 0.625rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.notification__post-thumbnail {
+  width: 2.438rem;
+  height: 2.438rem;
+  margin-left: 1.688rem;
+  margin-right: 1rem;
+}
+
+.inactive {
+  background: #ffffff;
+}
+
+@media (min-width: 40rem) {
+  .notifications__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 839px;
+    width: 730px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 63px 355px 89px 355px;
+  }
+
+  .notifications__header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 33px;
+    margin-bottom: 31px;
+    margin-left: 32px;
+    margin-right: 31px;
+  }
+
+  .notifications-header__title-container {
+    display: flex;
+  }
+
+  .notifications-header__title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 30px;
+    color: #1c202b;
+    height: fit-content;
+    padding-right: 11px;
+    margin: 0;
+  }
+
+  .notifications-header__number-container {
+    height: 25px;
+    width: 32px;
+    background: #0a327b;
+    border-radius: 6px;
+  }
+
+  .notifications-header__number {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .notifications__readed-button {
+    height: fit-content;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5e6778;
+    padding-left: 356px;
+  }
+
+  .notification {
+    display: flex;
+    background: #f7fafd;
+    height: 80px;
+    width: 670px;
+    margin-bottom: 8px;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .notification__profile-img {
+    height: 45px;
+    width: 45px;
+    margin-top: 18px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    margin-right: 19px;
+  }
+
+  .notification__msg {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5e6778;
+    padding-bottom: 3px;
+    margin: 0;
+    padding-top: 18px;
+    height: fit-content;
+  }
+
+  bold {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1c202b;
+  }
+
+  .notification-msg__post {
+    color: #5e6778;
+  }
+
+  .notification-msg__group {
+    color: #0a327b;
+  }
+
+  .notification-msg__dot {
+    height: 8px;
+    width: 8px;
+    background-color: #f65552;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 6px;
+  }
+
+  .notification__time {
+    color: #939cad;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 18px;
+    height: fit-content;
+  }
+
+  .notification__direct-message {
+    display: flex;
+    background: #ffffff;
+    height: 192px;
+    width: 670px;
+    margin-bottom: 8px;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .direct-message__container {
+    border: solid 1px #dde7ee;
+    height: 97px;
+    width: 566px;
+  }
+
+  .direct-message__content {
+    color: #5e6778;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 17px 20px 20px 20px;
+    margin: 0;
+  }
+
+  .notification__direct-message > .notification__profile-img {
+    height: 45px;
+    width: 45px;
+    margin-top: 25px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    margin-right: 19px;
+    align-self: flex-start;
+  }
+
+  .notification__comment {
+    display: flex;
+    background: #ffffff;
+    height: 80px;
+    width: 670px;
+    margin-bottom: 8px;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .notification__post-thumbnail {
+    width: 45px;
+    height: 45px;
+    margin-left: 182px;
+    margin-right: 20px;
+  }
+}

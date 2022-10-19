@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__container {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  width: 40vw;
+  border-radius: 10px;
+}
+
+.product-card__image {
+  width: 50%;
+  height: inherit;
+  border-image: 5px;
+}
+
+.product-card {
+  width: 50%;
+  height: inherit;
+}
+
+.product-card__product-img {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 40px;
+  height: 100%;
+}
+.product__type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+.product__title {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(212, 21%, 14%);
+  margin-top: 25px;
+}
+
+.product__description {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 25px;
+}
+
+.product__price-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.product__price {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+.product__real-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  height: fit-content;
+}
+
+.product-card__add-button {
+  width: 100%;
+  height: 45px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-style: hidden;
+}
+
+.product-card__add-button:hover {
+  background-color: hsl(158, 36%, 26%);
+}
+
+.add-button__icon {
+  margin-right: 5px;
+}
