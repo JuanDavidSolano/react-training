@@ -58,7 +58,8 @@ html {
   width: 130px;
 }
 
-@media (min-width: 40rem) {
+/* Avoid the use of relative measures (rem em)*/
+@media (min-width: 640px) {
   body {
     display: flex;
     height: 100vh;
@@ -67,6 +68,7 @@ html {
   .cards {
     display: flex;
     margin: 150px 200px 150px 200px;
+    min-height: 574px;
   }
 
   .card {
@@ -93,6 +95,6 @@ html {
   .description {
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 170px; /* this one here should be a different one because the button is moving weird with the text*/
+    margin-bottom: 170px;
   }
 }
