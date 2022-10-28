@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: rgb(14, 19, 34);
+}
+
+.content {
+  margin: 20px;
+}
+
+.card {
+  background: rgb(30, 32, 72);
+  border-radius: 10px;
+  height: 160px;
+  width: 315px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__profile {
+  height: 110px;
+  background: rgb(84, 71, 226);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__img {
+  height: 60px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card-profile__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 14px;
+}
+
+.card-profile__name {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card__buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.card-profile__buttons {
+  color: rgb(111, 116, 183);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.card-profile__buttons:hover {
+  color: white;
+}
+
+.data-card {
+  border-radius: 10px;
+  height: 160px;
+  width: 315px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-card__logo {
+  position: absolute;
+  margin-right: 10px;
+  margin-top: -10px;
+  object-fit: cover;
+}
+
+.card__inner {
+  background: rgb(30, 32, 72);
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+  align-self: flex-end;
+  z-index: 10;
+  display: grid;
+  grid-template-areas:
+    "title dots"
+    "time last";
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.data-card__title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  grid-area: title;
+  margin: 0px;
+  height: fit-content;
+  align-self: flex-end;
+}
+
+.data-card__time {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  grid-area: time;
+  margin: 0px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.data-card__last-time {
+  color: rgb(189, 191, 240);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  grid-area: last;
+  justify-self: end;
+  align-self: center;
+  margin: 0;
+}
+
+.dots {
+  display: flex;
+  width: 23px;
+  justify-content: space-around;
+  grid-area: dots;
+  justify-self: end;
+  align-self: end;
+  cursor: pointer;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background: rgb(189, 191, 240);
+  border-radius: 50%;
+}
+.work {
+  background: rgb(255, 139, 100);
+}
+
+.play {
+  background: rgb(86, 194, 230);
+}
+
+.study {
+  background: rgb(255, 94, 124);
+}
+
+.exercise {
+  background: rgb(75, 208, 135);
+}
+
+.social {
+  background: rgb(114, 53, 210);
+}
+
+.self-care {
+  background: rgb(241, 198, 90);
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 90%;
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card__profile {
+    height: 66%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card__buttons-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .card {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 130px;
+  }
+
+  .data-card {
+    margin: 0;
+  }
+
+  .data-card__title {
+    font-size: 14px;
+  }
+
+  .data-card__time {
+    font-size: 35px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .data-card__last-time {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: flex-start;
+  }
+
+  .dots {
+    align-self: center;
+  }
+
+  .work {
+    width: 100%;
+    height: 100%;
+  }
+
+  .study {
+    width: 100%;
+    height: 100%;
+  }
+
+  .play {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exercise {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social {
+    width: 100%;
+    height: 100%;
+  }
+
+  .self-care {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    background: red;
+  }
+} */
