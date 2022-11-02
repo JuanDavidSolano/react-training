@@ -10,6 +10,8 @@ body {
   height: 100%;
   margin: 0;
   background: rgb(14, 19, 34);
+  display: flex;
+  justify-content: center;
 }
 
 .content {
@@ -180,19 +182,26 @@ body {
 }
 
 @media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+
   .content {
     width: 90%;
     display: grid;
     row-gap: 15px;
     column-gap: 15px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 767px;
+    max-height: 323px;
   }
 
   .card__profile {
     height: 66%;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 193px;
   }
 
   .card__buttons-container {
@@ -206,6 +215,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    max-width: 193px;
   }
 
   .card__inner {
@@ -216,6 +226,7 @@ body {
 
   .data-card {
     margin: 0;
+    max-width: 191px;
   }
 
   .data-card__title {
