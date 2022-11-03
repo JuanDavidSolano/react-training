@@ -2,8 +2,10 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .cards {
@@ -12,6 +14,7 @@ html {
 
 .card {
   height: 33%;
+  max-width: 414px;
 }
 
 .sedans {
@@ -58,22 +61,16 @@ html {
   width: 130px;
 }
 
-/* Avoid the use of relative measures (rem em)*/
-@media (min-width: 640px) {
-  body {
-    display: flex;
-    height: 100vh;
-  }
-
+@media (min-width: 1024px) {
   .cards {
     display: flex;
-    margin: 150px 200px 150px 200px;
+    margin: 100px;
     min-height: 574px;
   }
 
   .card {
     width: 33.3%;
-    height: 90%;
+    height: 100%;
   }
 
   .sedans {
@@ -95,6 +92,7 @@ html {
   .description {
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 170px;
+    max-height: 240px;
+    min-height: 240px;
   }
 }
