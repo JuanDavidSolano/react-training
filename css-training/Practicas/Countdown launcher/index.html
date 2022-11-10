@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./timer.css">
+  <script src="./timer.js" defer></script>
+  <title>Launch Countdown</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1 class="title">WE'RE LAUNCHING SOON</h1>
+    <div class="timer">
+      <div class="timer__card-container">
+        <div class="timer__flip-card" data-days>
+          <div class="flip-card__top">00</div>
+          <div class="flip-card__bottom">00</div>
+        </div>
+        <h1 class="card__label">DAYS</h1>
+      </div>
+      <div class="timer__card-container">
+        <div class="timer__flip-card" data-hours>
+          <div class="flip-card__top">00</div>
+          <div class="flip-card__bottom">00</div>
+        </div>
+        <h1 class="card__label">HOURS</h1>
+      </div>
+      <div class="timer__card-container">
+        <div class="timer__flip-card" data-minutes>
+          <div class="flip-card__top">00</div>
+          <div class="flip-card__bottom">00</div>
+        </div>
+        <h1 class="card__label">MINUTES</h1>
+      </div>
+      <div class="timer__card-container">
+        <div class="timer__flip-card" data-seconds>
+          <div class="flip-card__top">00</div>
+          <div class="flip-card__bottom">00</div>
+        </div>
+        <h1 class="card__label">SECONDS</h1>
+      </div>
+    </div>
+  </div>
+  <div class="icons">
+    <img class="icon" src="./resources/icon-facebook.svg" alt="">
+    <img src="./resources/icon-pinterest.svg" alt="" class="icon">
+    <img src="./resources/icon-instagram.svg" alt="" class="icon">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.timer__flip-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 67px;
+  max-width: 67px;
+}
+
+.flip-card__top,
+.flip-card__bottom,
+.timer__flip-card .bottom-flip,
+.timer__flip-card .top-flip {
+  height: 21.5px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 30px;
+}
+
+.flip-card__top,
+.timer__flip-card .top-flip {
+  background-color: rgb(44, 45, 68);
+  border-bottom: 0.25px solid rgb(30, 30, 42);
+  color: rgb(204, 76, 108);
+}
+
+.flip-card__bottom,
+.timer__flip-card .bottom-flip {
+  background-color: rgb(51, 54, 79);
+  display: flex;
+  align-items: flex-end;
+  color: hsl(345, 95%, 68%);
+}
+
+.timer__flip-card .top-flip {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  transform-origin: bottom;
+  animation: flip-top 250ms ease-in;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.timer__flip-card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  animation: flip-bottom 250ms ease-out 250ms;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}

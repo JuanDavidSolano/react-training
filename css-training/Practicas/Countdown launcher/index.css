@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  /*outline: 2px solid red;*/
+}
+
+html {
+  height: 100%;
+  background: rgb(30, 30, 42);
+  background-image: url("./resources/bg-stars.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url("./resources/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  max-width: 130px;
+}
+
+.content * {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: white;
+  max-width: 300px;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+}
+
+.timer__card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  min-width: 67px;
+  max-width: 67px;
+}
+
+.card__label {
+  font-size: 10px;
+  color: hsl(237, 18%, 59%);
+}
