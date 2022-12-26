@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/JuanDavidSolano/react-training/static/css/main.17be3300.css",
-    "main.js": "/JuanDavidSolano/react-training/static/js/main.bb6e0314.js",
-    "static/media/meals.jpeg": "/JuanDavidSolano/react-training/static/media/meals.2971f633fc1382581cbf.jpeg",
-    "index.html": "/JuanDavidSolano/react-training/index.html",
-    "main.17be3300.css.map": "/JuanDavidSolano/react-training/static/css/main.17be3300.css.map",
-    "main.bb6e0314.js.map": "/JuanDavidSolano/react-training/static/js/main.bb6e0314.js.map"
+    "main.css": "/react-training/static/css/main.17be3300.css",
+    "main.js": "/react-training/static/js/main.a4ae3f71.js",
+    "static/media/meals.jpeg": "/react-training/static/media/meals.2971f633fc1382581cbf.jpeg",
+    "index.html": "/react-training/index.html",
+    "main.17be3300.css.map": "/react-training/static/css/main.17be3300.css.map",
+    "main.a4ae3f71.js.map": "/react-training/static/js/main.a4ae3f71.js.map"
   },
   "entrypoints": [
     "static/css/main.17be3300.css",
-    "static/js/main.bb6e0314.js"
+    "static/js/main.a4ae3f71.js"
   ]
 }
