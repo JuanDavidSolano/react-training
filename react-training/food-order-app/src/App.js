@@ -8,7 +8,6 @@ import CartProvider from "./store/CartProvider";
 import Meals from "./pages/Meals";
 import Product from "./pages/Product";
 import Orders from "./pages/Orders";
-import OrderContent from "./components/Orders/OrderContent/OrderContent";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
