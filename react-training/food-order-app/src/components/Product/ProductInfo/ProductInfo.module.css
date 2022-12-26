@@ -1,0 +1,50 @@
+.product-info {
+  max-width: 60rem;
+  max-height: 60rem;
+  width: 90%;
+  height: 90%;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.product-info > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-info h1 {
+  font-size: 25px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.summary h1 {
+  margin: 0;
+}
+
+.summary h3 {
+  margin: 0;
+}
+
+.summary p {
+  margin: 0;
+}
+
+.product-info img {
+  border-radius: 15px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .product-info img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}

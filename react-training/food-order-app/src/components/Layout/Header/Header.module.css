@@ -1,0 +1,97 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #8a2b06;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.main-image {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+
+.header ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1rem;
+  width: 5rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: #2c0d00;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #2c0d00;
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header ul {
+    display: none;
+  }
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header > button {
+    max-width: 40px;
+  }
+
+  .header > button span:not(:first-child):not(:last-child) {
+    display: none;
+  }
+
+  .header.responsive svg.icon {
+    display: block;
+  }
+
+  .header.responsive ul {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    display: block;
+    background: rgba(163, 60, 19);
+    height: 200px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .header.responsive li {
+    padding-top: 10px;
+  }
+}

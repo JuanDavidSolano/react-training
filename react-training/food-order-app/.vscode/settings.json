@@ -1,0 +1,32 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": ["jsx", "js"]
+  },
+  "editor.tokenColorCustomizations": {
+    "[Bearded Theme Monokai Metallian]": {
+      "textMateRules": [
+        {
+          "scope": ["entity.name.tag"],
+          "settings": { "foreground": "#ff6188" }
+        },
+        {
+          "scope": [
+            "entity.name.tag.js.jsx support.class.component.js.jsx",
+            "entity.name.tag support.class.component",
+            "source.vue support.class.component"
+          ],
+          "settings": { "foreground": "#A9DC76" }
+        },
+        {
+          "scope": "region.whitish",
+          "settings": {
+            "foreground": "#a7a741"
+          }
+        }
+      ]
+    }
+  }
+}
