@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/static/css/main.17be3300.css",
+    "main.js": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/static/js/main.372a3b09.js",
+    "static/media/meals.jpeg": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/static/media/meals.2971f633fc1382581cbf.jpeg",
+    "index.html": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/index.html",
+    "main.17be3300.css.map": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/static/css/main.17be3300.css.map",
+    "main.372a3b09.js.map": "/JuanDavidSolano/react-training/tree/main/react-training/food-order-app/static/js/main.372a3b09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17be3300.css",
+    "static/js/main.372a3b09.js"
+  ]
+}
