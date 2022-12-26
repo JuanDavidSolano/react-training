@@ -1,6 +1,6 @@
 {
-  "name": "food-order-app",
   "homepage": "https://JuanDavidSolano.github.io/react-training",
+  "name": "food-order-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
